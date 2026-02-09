@@ -71,7 +71,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            SaaS product engineer, AI builder, and digital systems architect
+            SaaS product engineer, AI builder, and digital systems strategist
           </motion.p>
 
           <motion.div
