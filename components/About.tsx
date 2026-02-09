@@ -33,19 +33,18 @@ export default function About() {
             <p>
               I build SaaS platforms, AI-powered products, and digital systems that solve real problems 
               for businesses and organizations. Based in Riyadh, Saudi Arabia, I focus on end-to-end 
-              product development—from initial design concepts to production launches.
+              product development—from initial concept to production launch.
             </p>
             
             <p>
-              My work centers on systems thinking: understanding how components interact, how data flows, 
-              and how users experience products. I specialize in finance & operations software, 
-              cybersecurity applications, and decentralized concepts that require both technical depth 
-              and product intuition.
+              My approach is rooted in systems thinking: understanding how components interact, how data flows, 
+              and how users experience products. I have experience across various industries, creating solutions 
+              that combine technical depth with product intuition.
             </p>
             
             <p>
               Speed and precision matter. I&apos;ve built full platforms in days, not months—not by cutting 
-              corners, but by understanding what truly matters and executing with clarity.
+              corners, but by focusing on what truly matters and executing with clarity.
             </p>
           </motion.div>
         </motion.div>
