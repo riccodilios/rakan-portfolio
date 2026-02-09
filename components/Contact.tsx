@@ -18,7 +18,7 @@ export default function Contact() {
             Contact
           </h2>
           <p className="text-gray-400 text-lg font-light max-w-2xl mx-auto">
-            Let's discuss your next project
+            Let&apos;s discuss your next project
           </p>
         </motion.div>
 

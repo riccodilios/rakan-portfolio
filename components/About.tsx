@@ -44,7 +44,7 @@ export default function About() {
             </p>
             
             <p>
-              Speed and precision matter. I've built full platforms in days, not months—not by cutting 
+              Speed and precision matter. I&apos;ve built full platforms in days, not months—not by cutting 
               corners, but by understanding what truly matters and executing with clarity.
             </p>
           </motion.div>
