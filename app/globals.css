@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+    box-shadow: 
+      0 8px 32px 0 rgba(31, 38, 135, 0.37),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-strong {
+    @apply backdrop-blur-2xl bg-white/10 border border-white/20;
+    box-shadow: 
+      0 8px 32px 0 rgba(31, 38, 135, 0.5),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  }
+  
+  .glass-hover {
+    @apply transition-all duration-500;
+    position: relative;
+  }
+  
+  .glass-hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .glass-hover:hover {
+    @apply bg-white/10 border-white/20;
+    box-shadow: 
+      0 12px 48px 0 rgba(31, 38, 135, 0.6),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  .glass-hover:hover::before {
+    opacity: 1;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-white;
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      rgba(139, 92, 246, 0.15) 0%,
+      rgba(59, 130, 246, 0.15) 25%,
+      rgba(139, 92, 246, 0.1) 50%,
+      rgba(168, 85, 247, 0.15) 75%,
+      rgba(139, 92, 246, 0.15) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .glass-reflection {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glass-reflection::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: transform 0.6s;
+    pointer-events: none;
+  }
+}
