@@ -12,6 +12,7 @@ interface Project {
   description: string;
   tags: string[];
   image: string;
+  url: string;
 }
 
 const projects: Project[] = [
@@ -23,6 +24,7 @@ const projects: Project[] = [
     description: "Full SaaS platform for financial operations",
     tags: ["SaaS", "Finance", "Full-stack"],
     image: "/projects/finora.png",
+    url: "https://finora-7lwb.vercel.app/",
   },
   {
     id: "gearvo",
@@ -32,6 +34,7 @@ const projects: Project[] = [
     description: "Advanced product management system",
     tags: ["SaaS", "Product", "AI"],
     image: "/projects/gearvo.png",
+     url: "https://gearvo.netlify.app/",
   },
   {
     id: "pulse",
@@ -41,6 +44,7 @@ const projects: Project[] = [
     description: "Real-time analytics and monitoring platform",
     tags: ["SaaS", "Analytics", "Real-time"],
     image: "/projects/pulse.png",
+    url: "https://pulse-ops.netlify.app/",
   },
   {
     id: "sakinah",
@@ -50,6 +54,7 @@ const projects: Project[] = [
     description: "Elegant digital experience platform",
     tags: ["Design", "Product", "Web"],
     image: "/projects/sakinah.png",
+    url: "https://sakinahh.netlify.app/",
   },
   {
     id: "nk-arch",
@@ -59,6 +64,7 @@ const projects: Project[] = [
     description: "Architecture portfolio and design showcase",
     tags: ["Design", "Portfolio", "Web"],
     image: "/projects/nk-arch.png",
+    url: "https://nkarchdesign.com/",
   },
   {
     id: "codesync",
@@ -68,6 +74,7 @@ const projects: Project[] = [
     description: "Web agency platform and client management",
     tags: ["Agency", "SaaS", "Web"],
     image: "/projects/codesync.png",
+    url: "https://codesync-dev.netlify.app/",
   },
   {
     id: "futroball",
@@ -77,6 +84,7 @@ const projects: Project[] = [
     description: "Sports platform and community",
     tags: ["Sports", "Community", "Web"],
     image: "/projects/futroball.png",
+    url: "https://futroball.netlify.app/",
   },
   {
     id: "yazeed-blog",
@@ -86,6 +94,7 @@ const projects: Project[] = [
     description: "Personal blog and content platform",
     tags: ["Blog", "Content", "Web"],
     image: "/projects/yazeed-blog.png",
+    url: "https://yazeedalsagr.netlify.app/",
   },
 ];
 

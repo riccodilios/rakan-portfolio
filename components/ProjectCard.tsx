@@ -13,6 +13,7 @@ interface Project {
   description: string;
   tags: string[];
   image: string;
+  url: string;
 }
 
 interface ProjectCardProps {
@@ -81,7 +82,13 @@ export default function ProjectCard({
       }}
       className="perspective-1000"
     >
-      <div className="glass glass-hover glass-reflection rounded-2xl p-6 h-full cursor-pointer relative overflow-hidden group">
+      <a
+        href={project.url}
+        target="_blank"
+        rel="noreferrer"
+        className="block h-full"
+      >
+        <div className="glass glass-hover glass-reflection rounded-2xl p-6 h-full cursor-pointer relative overflow-hidden group">
         {/* Browser window mockup */}
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-3">
@@ -184,6 +191,7 @@ export default function ProjectCard({
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent w-1/2" />
         </motion.div>
       </div>
+      </a>
     </motion.div>
   );
 }
