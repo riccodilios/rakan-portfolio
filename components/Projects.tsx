@@ -17,6 +17,26 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: "alytic",
+    name: "Alytic",
+    category: "featured",
+    buildTime: "—",
+    description: "Product analytics and operational intelligence",
+    tags: ["SaaS", "Analytics", "Ops"],
+    image: "/projects/alytic.png",
+    url: "https://alytic.sa",
+  },
+  {
+    id: "rivalize",
+    name: "Rivalize",
+    category: "featured",
+    buildTime: "—",
+    description: "Competitive intelligence and market positioning",
+    tags: ["SaaS", "Strategy", "Insights"],
+    image: "/projects/rivalize.png",
+    url: "https://rivalize.netlify.app/",
+  },
+  {
     id: "finora",
     name: "Finora",
     category: "featured",
@@ -34,7 +54,7 @@ const projects: Project[] = [
     description: "Advanced product management system",
     tags: ["SaaS", "Product", "AI"],
     image: "/projects/gearvo.png",
-     url: "https://gearvo.netlify.app/",
+    url: "https://gearvo.netlify.app/",
   },
   {
     id: "pulse",
