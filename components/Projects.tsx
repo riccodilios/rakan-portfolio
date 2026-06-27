@@ -37,6 +37,16 @@ const projects: Project[] = [
     url: "https://rivalize.netlify.app/",
   },
   {
+    id: "vanta",
+    name: "Vanta",
+    category: "featured",
+    buildTime: "—",
+    description: "Luxury bespoke NFC digital business cards",
+    tags: ["NFC", "Product", "Web"],
+    image: "/projects/Vanta Bespoke NFC.png",
+    url: "https://vanta-nfc.netlify.app/",
+  },
+  {
     id: "finora",
     name: "Finora",
     category: "featured",
