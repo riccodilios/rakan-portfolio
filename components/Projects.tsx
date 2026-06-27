@@ -40,7 +40,7 @@ const projects: Project[] = [
     id: "vanta",
     name: "Vanta",
     category: "featured",
-    buildTime: "—",
+    buildTime: "3 days",
     description: "Luxury bespoke NFC digital business cards",
     tags: ["NFC", "Product", "Web"],
     image: "/projects/Vanta Bespoke NFC.png",
